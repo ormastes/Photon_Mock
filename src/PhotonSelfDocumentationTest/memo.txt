@@ -1,0 +1,76 @@
+
+Integration Test
+application
+>feature
+
+Component(Application)
+Component
+>feature
+>>feature
+>Component
+
+Unit
+Integration
+System
+SpecKind = Performance_spec, Unit_spec, System_spec 
+
+Application() {
+	Features() {
+		includeFeature();
+
+	}
+	Components() {
+		includeComponent()
+	}
+}
+it will take excute tc list plus excute kind which like Feature, Component, PerformanceRequirement.....
+ 이름 으로 새로운 종류 추가 (목록 포함, Features(), Feature()
+Features()와 Components()는 Dummy로 향후 include하는 Component또는 Application실행 attribute의 값(Features,Components)로 수행 목록 설정
+change next to common form like selfdocumentGroup
+#define Feature(feature) void feature(
+다음을 Include_component_를 만들고 _BDD_feature_preprocessor 를 component용으로 만들기
+like includeselfdocumentGroup with extra parameter(feature)
+#define Include_feature_(...) \
+	if (_BDD_feature_preprocessor 
+
+*************************************************************
+새로운 종류마다.
+#define include_새로운종류(...) include_(새로운종류, __arg)
+#define 새로운종류 groupKind
+#dfeind 새로운종류S groupKindS(새로운종류)//groupKindS 는 Context의 실행kind가 새로운 종류를 포함할 때만 실행하는 로직 생성
+new_group(새로운종류) {log()....}// 이건 GlobalVariable 및 Log 함수 몸채
+init_group(새로운종류) // GlobalVariable을 초기화함 (초기화 함수안에 있어야 함.
+
+Include_feature
+#define __BDD_Include_(__BDD_group_name, ...) __BDD_Append_log_##__BDD_group_name(__VA_ARGS__)\
+	if (BDD_group_preprocessor
+
+Feature >> __BDD_group_
+#define __BDD_group_(__BDD_group_name) void __BDD_group_name(int scenario_mode, int* scenario_current_index, int* scenario_target_index, int* scenario_target_size, int scenario_current_index_temp, int scenario_target_index_temp, int scenario_target_size_temp,\
+	char** scenario_target_names, int* scenario_target_name_remain)
+
+/*currently nothing*/
+#define __BDD_groups_(__BDD_group_name) if(1) 
+
+#define __BDD_new_group_(__BDD_group_name) void __BDD_Append_log_##__BDD_group_name(){log(#__BDD_group_name);} int __BDD_group_name##id
+
+#define __BDD_init_group_(__BDD_group_name) __BDD_group_currentID<<=1;__BDD_group_name##id = __BDD_group_currentID
+
+static int __BDD_group_currentID = 0;
+void __BDD_Init(void)
+
+
+
+#define Include_feature(...) __BDD_Include_(feature, __VA_ARGS__)
+#define Feature __BDD_group_
+#define Features() __BDD_groups_(Features)
+__BDD_new_group_(Feature);
+__BDD_init_group_(Feature);
+*************************************************************
+
+Componentn Spec {
+	ComponentA()
+
+}
+
+

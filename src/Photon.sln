@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonMock", "PhotonMock\PhotonMock.vcxproj", "{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonMock_Test", "PhotonMock_Test\PhotonMock_Test.vcxproj", "{A084FBA6-387F-49E7-B1AB-798A348C4FD1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B} = {F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonLog", "PhotonLog\PhotonLog.vcxproj", "{79FB0868-709C-4AE3-A587-78451E826495}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonLog_Test", "PhotonLog_Test\PhotonLog_Test.vcxproj", "{2840C9AF-7B78-492B-8173-EF0B0D64AD28}"
+	ProjectSection(ProjectDependencies) = postProject
+		{79FB0868-709C-4AE3-A587-78451E826495} = {79FB0868-709C-4AE3-A587-78451E826495}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonComparator", "PhotonComparator\PhotonComparator.vcxproj", "{4354B97F-1054-4D07-985B-94BF816AC82C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonComparator_Test", "PhotonComparator_Test\PhotonComparator_Test.vcxproj", "{45780A7C-5392-4EAA-8E00-8A39CDBB8A1D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4354B97F-1054-4D07-985B-94BF816AC82C} = {4354B97F-1054-4D07-985B-94BF816AC82C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonSelfDocumentationTest_Test", "PhotonSelfDocumentationTest_Test\PhotonSelfDocumentationTest_Test.vcxproj", "{24FE6F87-5EC8-408F-A674-E08BDABB41D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B} = {F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}
+		{E6DCF4EE-9B61-4548-AD53-80AEB52D0D38} = {E6DCF4EE-9B61-4548-AD53-80AEB52D0D38}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonSelfDocumentationTest", "PhotonSelfDocumentationTest\PhotonSelfDocumentationTest.vcxproj", "{E6DCF4EE-9B61-4548-AD53-80AEB52D0D38}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonParameterizedTest", "PhotonParameterizedTest\PhotonParameterizedTest.vcxproj", "{62D87748-D07E-4314-B977-166382F166A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PhotonParameterizedTest_Test", "PhotonParameterizedTest_Test\PhotonParameterizedTest_Test.vcxproj", "{FCF9077F-C7FB-412D-8075-40D62FE0596A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{62D87748-D07E-4314-B977-166382F166A1} = {62D87748-D07E-4314-B977-166382F166A1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}.Debug|Win32.Build.0 = Debug|Win32
+		{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}.Release|Win32.ActiveCfg = Release|Win32
+		{F7D73B8D-29C9-4D9E-A5B6-3948698F6D5B}.Release|Win32.Build.0 = Release|Win32
+		{A084FBA6-387F-49E7-B1AB-798A348C4FD1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A084FBA6-387F-49E7-B1AB-798A348C4FD1}.Debug|Win32.Build.0 = Debug|Win32
+		{A084FBA6-387F-49E7-B1AB-798A348C4FD1}.Release|Win32.ActiveCfg = Release|Win32
+		{A084FBA6-387F-49E7-B1AB-798A348C4FD1}.Release|Win32.Build.0 = Release|Win32
+		{79FB0868-709C-4AE3-A587-78451E826495}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79FB0868-709C-4AE3-A587-78451E826495}.Debug|Win32.Build.0 = Debug|Win32
+		{79FB0868-709C-4AE3-A587-78451E826495}.Release|Win32.ActiveCfg = Release|Win32
+		{79FB0868-709C-4AE3-A587-78451E826495}.Release|Win32.Build.0 = Release|Win32
+		{2840C9AF-7B78-492B-8173-EF0B0D64AD28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2840C9AF-7B78-492B-8173-EF0B0D64AD28}.Debug|Win32.Build.0 = Debug|Win32
+		{2840C9AF-7B78-492B-8173-EF0B0D64AD28}.Release|Win32.ActiveCfg = Release|Win32
+		{2840C9AF-7B78-492B-8173-EF0B0D64AD28}.Release|Win32.Build.0 = Release|Win32
+		{4354B97F-1054-4D07-985B-94BF816AC82C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4354B97F-1054-4D07-985B-94BF816AC82C}.Debug|Win32.Build.0 = Debug|Win32
+		{4354B97F-1054-4D07-985B-94BF816AC82C}.Release|Win32.ActiveCfg = Release|Win32
+		{4354B97F-1054-4D07-985B-94BF816AC82C}.Release|Win32.Build.0 = Release|Win32
+		{45780A7C-5392-4EAA-8E00-8A39CDBB8A1D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45780A7C-5392-4EAA-8E00-8A39CDBB8A1D}.Debug|Win32.Build.0 = Debug|Win32
+		{45780A7C-5392-4EAA-8E00-8A39CDBB8A1D}.Release|Win32.ActiveCfg = Release|Win32
+		{45780A7C-5392-4EAA-8E00-8A39CDBB8A1D}.Release|Win32.Build.0 = Release|Win32
+		{24FE6F87-5EC8-408F-A674-E08BDABB41D0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24FE6F87-5EC8-408F-A674-E08BDABB41D0}.Debug|Win32.Build.0 = Debug|Win32
+		{24FE6F87-5EC8-408F-A674-E08BDABB41D0}.Release|Win32.ActiveCfg = Release|Win32
+		{24FE6F87-5EC8-408F-A674-E08BDABB41D0}.Release|Win32.Build.0 = Release|Win32
+		{E6DCF4EE-9B61-4548-AD53-80AEB52D0D38}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6DCF4EE-9B61-4548-AD53-80AEB52D0D38}.Debug|Win32.Build.0 = Debug|Win32
+		{E6DCF4EE-9B61-4548-AD53-80AEB52D0D38}.Release|Win32.ActiveCfg = Release|Win32
+		{E6DCF4EE-9B61-4548-AD53-80AEB52D0D38}.Release|Win32.Build.0 = Release|Win32
+		{62D87748-D07E-4314-B977-166382F166A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{62D87748-D07E-4314-B977-166382F166A1}.Debug|Win32.Build.0 = Debug|Win32
+		{62D87748-D07E-4314-B977-166382F166A1}.Release|Win32.ActiveCfg = Release|Win32
+		{62D87748-D07E-4314-B977-166382F166A1}.Release|Win32.Build.0 = Release|Win32
+		{FCF9077F-C7FB-412D-8075-40D62FE0596A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FCF9077F-C7FB-412D-8075-40D62FE0596A}.Debug|Win32.Build.0 = Debug|Win32
+		{FCF9077F-C7FB-412D-8075-40D62FE0596A}.Release|Win32.ActiveCfg = Release|Win32
+		{FCF9077F-C7FB-412D-8075-40D62FE0596A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

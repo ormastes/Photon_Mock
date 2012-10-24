@@ -1,0 +1,22 @@
+#include "..\PhotonMock\PhotonMock.h"
+PMMock(simple_function_0paramter_return, int);
+PMMock(simple_function_1paramter_return, int, input1, int);
+PMMock(simple_function_3paramter_return, int, input1, int, input2, int, input3,  int);
+PMMock(simple_function_4paramter_return, int, input1, int, input2, int, input3, int, input4,  int);
+PMMock(simple_function_5paramter_return, int, input1, int, input2, int, input3, int, input4, int, input5,  int);
+PMMock(simple_function_6paramter_return, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int);
+PMMock(simple_function_7paramter_return, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int);
+PMMock(simple_function_8paramter_return, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int, input8, int);
+PMMock(simple_function_9paramter_return, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int, input8, int, input9, int);
+PMMock(simple_function_10paramter_return, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int, input8, int, input9, int, input10, int);
+PMMock(simple_function_0paramter);
+PMMock(simple_function_1paramter, int, input1);
+PMMock(simple_function_2paramter, int, input1, int, input2);
+PMMock(simple_function_3paramter, int, input1, int, input2, int, input3);
+PMMock(simple_function_4paramter, int, input1, int, input2, int, input3, int, input4);
+PMMock(simple_function_5paramter, int, input1, int, input2, int, input3, int, input4, int, input5);
+PMMock(simple_function_6paramter, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6);
+PMMock(simple_function_7paramter, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7);
+PMMock(simple_function_8paramter, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int, input8);
+PMMock(simple_function_9paramter, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int, input8, int, input9);
+PMMock(simple_function_10paramter, int, input1, int, input2, int, input3, int, input4, int, input5, int, input6, int, input7, int, input8, int, input9, int, input10);
